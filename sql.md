@@ -1,4 +1,4 @@
-# Spark sql中sort by ,cluster by ,distribute by的差别
+# oder by,sort by ,cluster by ,distribute by的差别
 
 ## 1.order by
 order by会对输入做全局排序，因此只有一个Reducer(多个Reducer无法保证全局有序)，然而只有一个Reducer，会导致当输入规模较大时，消耗较长的计算时间。关于order by的详细介绍请参考这篇文章
